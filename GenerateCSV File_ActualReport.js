@@ -131,8 +131,8 @@ function lastWeekInvoiceReports(type) {
 				var fileid=nlapiSubmitFile(file);
 				var fileObj=nlapiLoadFile(fileid);
 
-				var recipients = ['sarveswara.basa@flextronics.com','srisatya.p.kantipudi@happiestminds.com']; 
-				var sender = 36;//Mr. Rao
+				var recipients = []; 
+				var sender = 36;
 				var subject = 'Sales Consolidation Report';
 				var body = 'Please find the sales consolidation Report';
 				nlapiSendEmail(sender,recipients,subject,body,null,null,null,fileObj);
